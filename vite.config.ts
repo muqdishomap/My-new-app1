@@ -17,9 +17,12 @@ export default defineConfig(({mode}) => {
           name: 'Umumarwan Restaurant & Bakery',
           short_name: 'Umumarwan',
           description: 'Fresh Pastry & Bakery in Mogadishu',
-          theme_color: '#000000',
-          background_color: '#000000',
+          start_url: '/',
           display: 'standalone',
+          background_color: '#000000',
+          theme_color: '#000000',
+          lang: 'en',
+          scope: '/',
           icons: [
             {
               src: 'pwa-192x192.svg',
