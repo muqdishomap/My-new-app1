@@ -13,35 +13,7 @@ export default defineConfig(({mode}) => {
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: ['favicon.ico', 'pwa-192x192.svg', 'pwa-512x512.svg'],
-        manifest: {
-          name: 'Umumarwan Restaurant & Bakery',
-          short_name: 'Umumarwan',
-          description: 'Fresh Pastry & Bakery in Mogadishu',
-          start_url: '/',
-          display: 'standalone',
-          background_color: '#000000',
-          theme_color: '#000000',
-          lang: 'en',
-          scope: '/',
-          icons: [
-            {
-              src: 'pwa-192x192.svg',
-              sizes: '192x192',
-              type: 'image/svg+xml'
-            },
-            {
-              src: 'pwa-512x512.svg',
-              sizes: '512x512',
-              type: 'image/svg+xml'
-            },
-            {
-              src: 'pwa-512x512.svg',
-              sizes: '512x512',
-              type: 'image/svg+xml',
-              purpose: 'any maskable'
-            }
-          ]
-        }
+        manifest: false
       })
     ],
     define: {
