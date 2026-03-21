@@ -24,9 +24,17 @@ async function run() {
       }
     });
 
+    // Save 512x512 for PWA
+    await image.write('public/pwa-512x512.png');
+    console.log('Saved public/pwa-512x512.png');
+
     // Resize to a standard favicon size (192x192 is good for modern web)
     image.resize({ w: 192, h: 192 });
     
+    // Save 192x192 for PWA
+    await image.write('public/pwa-192x192.png');
+    console.log('Saved public/pwa-192x192.png');
+
     await image.write('public/favicon.png');
     fs.renameSync('public/favicon.png', 'public/favicon.ico');
     console.log('Icon processed and saved to public/favicon.ico');
