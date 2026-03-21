@@ -2,10 +2,7 @@ const CACHE_NAME = 'umumarwan-pwa-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/favicon.ico',
-  '/manifest.json',
-  '/pwa-192x192.png',
-  '/pwa-512x512.png'
+  '/manifest.json'
 ];
 
 self.addEventListener('install', event => {
