@@ -12,7 +12,7 @@ export default defineConfig(({mode}) => {
       tailwindcss(),
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['favicon.ico', 'pwa-192x192.png', 'pwa-512x512.png'],
+        includeAssets: ['favicon.icon', '192x192.png', '512x512.png'],
         manifest: false
       })
     ],
